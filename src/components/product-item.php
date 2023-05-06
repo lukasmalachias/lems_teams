@@ -1,9 +1,9 @@
-<div class="card-product card" style="width: 18rem;">
+<div class="card-product card">
     <div class="card-body">
-        <img src="./src/images/SANTOS2022.1.jpg" class="rounded shadow card-img-top" alt="Imagem da camisa do Santos 2022">
+        <img src="<?php echo $product->image; ?>" class="rounded shadow card-img-top" alt="Imagem da camisa do Santos 2022">
         <div class="d-flex flex-column mt-3">    
-            <h5 class="card-title fs-6 mb-0">Camisa do Santos 2022</h5>
-            <span class="fs-4 fw-semibold">R$ 160,00</span>
+            <h5 class="card-title fs-6 mb-0"> <?php echo $product->name; ?></h5>
+            <span class="fs-4 fw-semibold"><?php echo $product->price_formatted; ?></span>
 
             <button type="button" class="btn btn-primary mt-3 d-flex align-items-center p-0 overflow-hidden text-sm">
                 <div 
